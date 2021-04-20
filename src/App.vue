@@ -1,19 +1,54 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <SearchAutocomplete
+      :items="[
+        'Apple',
+        'Apricot',
+        'Banana',
+        'Dragonfruit',
+        'Fig',
+        'Grape',
+        'Guava',
+        'Kiwi',
+        'Lemon',
+        'Lime',
+        'Orange',
+        'Mandarine',
+        'Mango',
+        'Papaya',
+        'Passionfruit',
+        'Pear',
+        'Peach',
+        'Pineapple',
+        'Plum',
+        'Tangerine',
+        'Blueberry',
+        'Blackberry',
+        'Lingonberry',
+        'Raspberry',
+        'Gooseberry',
+        'Mulberry',
+        'Strawberry',
+        'Watermelon',
+      ]"
+    />
+
+    <audio controls>
+      <source src="@/assets/1337.mp3" type="audio/mpeg" />
+      Your browser does not support the audio tag.
+    </audio>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import SearchAutocomplete from "./components/SearchAutocomplete.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
-  }
-}
+    SearchAutocomplete,
+  },
+};
 </script>
 
 <style>
